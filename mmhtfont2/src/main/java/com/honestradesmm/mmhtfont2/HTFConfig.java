@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.RadioButton;
@@ -17,15 +18,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatCheckBox;
-import androidx.appcompat.widget.AppCompatCheckedTextView;
-import androidx.appcompat.widget.AppCompatEditText;
-import androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView;
-import androidx.appcompat.widget.AppCompatRadioButton;
-import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * Created by chris on 20/12/2013
@@ -60,14 +52,14 @@ public class HTFConfig {
      * this adds those classes to the style lookup map
      */
     private static void addAppCompatViews() {
-        DEFAULT_STYLES.put(AppCompatTextView.class, android.R.attr.textViewStyle);
-        DEFAULT_STYLES.put(AppCompatButton.class, android.R.attr.buttonStyle);
-        DEFAULT_STYLES.put(AppCompatEditText.class, android.R.attr.editTextStyle);
-        DEFAULT_STYLES.put(AppCompatAutoCompleteTextView.class, android.R.attr.autoCompleteTextViewStyle);
-        DEFAULT_STYLES.put(AppCompatMultiAutoCompleteTextView.class, android.R.attr.autoCompleteTextViewStyle);
-        DEFAULT_STYLES.put(AppCompatCheckBox.class, android.R.attr.checkboxStyle);
-        DEFAULT_STYLES.put(AppCompatRadioButton.class, android.R.attr.radioButtonStyle);
-        DEFAULT_STYLES.put(AppCompatCheckedTextView.class, android.R.attr.checkedTextViewStyle);
+        DEFAULT_STYLES.put(TextView.class, android.R.attr.textViewStyle);
+        DEFAULT_STYLES.put(Button.class, android.R.attr.buttonStyle);
+        DEFAULT_STYLES.put(EditText.class, android.R.attr.editTextStyle);
+        DEFAULT_STYLES.put(TextView.class, android.R.attr.autoCompleteTextViewStyle);
+        DEFAULT_STYLES.put(MultiAutoCompleteTextView.class, android.R.attr.autoCompleteTextViewStyle);
+        DEFAULT_STYLES.put(CheckBox.class, android.R.attr.checkboxStyle);
+        DEFAULT_STYLES.put(RadioButton.class, android.R.attr.radioButtonStyle);
+        DEFAULT_STYLES.put(CheckedTextView.class, android.R.attr.checkedTextViewStyle);
     }
 
     private static HTFConfig sInstance;

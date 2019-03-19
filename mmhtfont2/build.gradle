@@ -24,6 +24,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //implementation "com.android.support:support-v4:28.0.0" //Added
+    //implementation "com.android.support:appcompat-v7:28.0.0" //Added
+    //implementation "com.android.support:support-core-utils:28.0.0"
     api "com.android.support:appcompat-v7:${supportLibraryVersion}"
 }
 
